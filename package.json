@@ -1,0 +1,31 @@
+{
+  "name": "sql-to-ts",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "nodemon --quiet",
+    "build": "etsc",
+    "test": "ts-mocha test/**/*.test.ts",
+    "start": "node ./build/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "pg": "^8.11.3"
+  },
+  "devDependencies": {
+    "@types/expect": "^24.3.0",
+    "@types/express": "^4.17.21",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "^20.10.5",
+    "@types/pg": "^8.10.9",
+    "esbuild": "^0.19.10",
+    "esbuild-node-tsc": "^2.0.5",
+    "mocha": "^10.2.0",
+    "nodemon": "^3.0.2",
+    "ts-mocha": "^10.0.0",
+    "typescript": "^5.3.3"
+  }
+}

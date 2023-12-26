@@ -1,0 +1,492 @@
+[
+    {
+        "Schema": "pg_catalog",
+        "Name": "\"any\"",
+        "Description": "pseudo-type representing any type"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "\"char\"",
+        "Description": "single character"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "aclitem",
+        "Description": "access control list"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "anyarray",
+        "Description": "pseudo-type representing a polymorphic array type"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "anycompatible",
+        "Description": "pseudo-type representing a polymorphic common type"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "anycompatiblearray",
+        "Description": "pseudo-type representing an array of polymorphic common type elements"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "anycompatiblemultirange",
+        "Description": "pseudo-type representing a multirange over a polymorphic common type"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "anycompatiblenonarray",
+        "Description": "pseudo-type representing a polymorphic common type that is not an array"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "anycompatiblerange",
+        "Description": "pseudo-type representing a range over a polymorphic common type"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "anyelement",
+        "Description": "pseudo-type representing a polymorphic base type"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "anyenum",
+        "Description": "pseudo-type representing a polymorphic base type that is an enum"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "anymultirange",
+        "Description": "pseudo-type representing a polymorphic base type that is a multirange"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "anynonarray",
+        "Description": "pseudo-type representing a polymorphic base type that is not an array"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "anyrange",
+        "Description": "pseudo-type representing a range over a polymorphic base type"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "bigint",
+        "Description": "~18 digit integer, 8-byte storage"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "bit",
+        "Description": "fixed-length bit string"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "bit varying",
+        "Description": "variable-length bit string"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "boolean",
+        "Description": "boolean, 'true'/'false'"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "box",
+        "Description": "geometric box '(lower left,upper right)'"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "bytea",
+        "Description": "variable-length string, binary values escaped"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "character",
+        "Description": "char(length), blank-padded string, fixed storage length"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "character varying",
+        "Description": "varchar(length), non-blank-padded string, variable storage length"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "cid",
+        "Description": "command identifier type, sequence in transaction id"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "cidr",
+        "Description": "network IP address/netmask, network address"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "circle",
+        "Description": "geometric circle '(center,radius)'"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "cstring",
+        "Description": "C-style string"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "date",
+        "Description": "date"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "datemultirange",
+        "Description": "multirange of dates"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "daterange",
+        "Description": "range of dates"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "double precision",
+        "Description": "double-precision floating point number, 8-byte storage"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "event_trigger",
+        "Description": "pseudo-type for the result of an event trigger function"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "fdw_handler",
+        "Description": "pseudo-type for the result of an FDW handler function"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "gtsvector",
+        "Description": "GiST index internal text representation for text search"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "index_am_handler",
+        "Description": "pseudo-type for the result of an index AM handler function"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "inet",
+        "Description": "IP address/netmask, host address, netmask optional"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "int2vector",
+        "Description": "array of int2, used in system tables"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "int4multirange",
+        "Description": "multirange of integers"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "int4range",
+        "Description": "range of integers"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "int8multirange",
+        "Description": "multirange of bigints"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "int8range",
+        "Description": "range of bigints"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "integer",
+        "Description": "-2 billion to 2 billion integer, 4-byte storage"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "internal",
+        "Description": "pseudo-type representing an internal data structure"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "interval",
+        "Description": "@ <number> <units>, time interval"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "json",
+        "Description": "JSON stored as text"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "jsonb",
+        "Description": "Binary JSON"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "jsonpath",
+        "Description": "JSON path"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "language_handler",
+        "Description": "pseudo-type for the result of a language handler function"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "line",
+        "Description": "geometric line"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "lseg",
+        "Description": "geometric line segment '(pt1,pt2)'"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "macaddr",
+        "Description": "XX:XX:XX:XX:XX:XX, MAC address"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "macaddr8",
+        "Description": "XX:XX:XX:XX:XX:XX:XX:XX, MAC address"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "money",
+        "Description": "monetary amounts, $d,ddd.cc"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "name",
+        "Description": "63-byte type for storing system identifiers"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "numeric",
+        "Description": "numeric(precision, decimal), arbitrary precision number"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "nummultirange",
+        "Description": "multirange of numerics"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "numrange",
+        "Description": "range of numerics"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "oid",
+        "Description": "object identifier(oid), maximum 4 billion"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "oidvector",
+        "Description": "array of oids, used in system tables"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "path",
+        "Description": "geometric path '(pt1,...)'"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "point",
+        "Description": "geometric point '(x, y)'"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "polygon",
+        "Description": "geometric polygon '(pt1,...)'"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "real",
+        "Description": "single-precision floating point number, 4-byte storage"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "record",
+        "Description": "pseudo-type representing any composite type"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "refcursor",
+        "Description": "reference to cursor (portal name)"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "regclass",
+        "Description": "registered class"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "regcollation",
+        "Description": "registered collation"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "regconfig",
+        "Description": "registered text search configuration"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "regdictionary",
+        "Description": "registered text search dictionary"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "regnamespace",
+        "Description": "registered namespace"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "regoper",
+        "Description": "registered operator"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "regoperator",
+        "Description": "registered operator (with args)"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "regproc",
+        "Description": "registered procedure"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "regprocedure",
+        "Description": "registered procedure (with args)"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "regrole",
+        "Description": "registered role"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "regtype",
+        "Description": "registered type"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "smallint",
+        "Description": "-32 thousand to 32 thousand, 2-byte storage"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "table_am_handler",
+        "Description": null
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "text",
+        "Description": "variable-length string, no limit specified"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "tid",
+        "Description": "(block, offset), physical location of tuple"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "time with time zone",
+        "Description": "time of day with time zone"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "time without time zone",
+        "Description": "time of day"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "timestamp with time zone",
+        "Description": "date and time with time zone"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "timestamp without time zone",
+        "Description": "date and time"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "trigger",
+        "Description": "pseudo-type for the result of a trigger function"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "tsm_handler",
+        "Description": "pseudo-type for the result of a tablesample method function"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "tsmultirange",
+        "Description": "multirange of timestamps without time zone"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "tsquery",
+        "Description": "query representation for text search"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "tsrange",
+        "Description": "range of timestamps without time zone"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "tstzmultirange",
+        "Description": "multirange of timestamps with time zone"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "tstzrange",
+        "Description": "range of timestamps with time zone"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "tsvector",
+        "Description": "text representation for text search"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "txid_snapshot",
+        "Description": "txid snapshot"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "unknown",
+        "Description": "pseudo-type representing an undetermined type"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "uuid",
+        "Description": "UUID datatype"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "void",
+        "Description": "pseudo-type for the result of a function with no real result"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "xid",
+        "Description": "transaction id"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "xid8",
+        "Description": "full transaction id"
+    },
+    {
+        "Schema": "pg_catalog",
+        "Name": "xml",
+        "Description": "XML content"
+    }
+]
