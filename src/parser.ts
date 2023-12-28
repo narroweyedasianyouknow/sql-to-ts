@@ -1,6 +1,6 @@
 import PostgresDataTypes from "./default";
 import { toPascalCase } from "./utils/formatter";
-
+const array_checker_regex = /\[\]$/gm;
 export class ASTParser {
   types: {
     Schema: string;
@@ -30,28 +30,39 @@ export class ASTParser {
       if (trimmed.length <= 0) continue;
       if (!trimmed.match(/^[a-z_]+/gm)) continue;
 
-      const matched = /(^\S+)\s+([^(\s|\,)]*)/gm.exec(trimmed) ?? [];
+      const matched =
+        /(^\S+)\s+([^(\s|\,)]*)(\s+([^(\s|\,)]*))?/gm.exec(trimmed) ?? [];
       const [_, name, not_parsed_type] = matched;
+
+      if (!name) continue;
+      if (!not_parsed_type) continue;
       const serialized = not_parsed_type
         .replace(/(\(.+\))/g, "")
         .replace(/^[a-z_]+\s([^\s]+)/g, "")
-        .replace(/[\(\)\;0-9]+/g, "");
+        .replace(/\(0-9\)\;+/g, "");
 
-      const is_array = serialized.match(/\[\]$/gm);
-      const type =
-        PostgresDataTypes[
-          serialized.replace(/\[\]$/gm, "").toLocaleLowerCase()
-        ];
+      const is_array = serialized.match(array_checker_regex);
+      const key_name = Object.keys(PostgresDataTypes).find((v) =>
+        trimmed.toLocaleLowerCase().includes(v)
+      );
+
+      console.log(key_name)
+      if (!key_name) {
+        console.log(
+          `Type ${serialized} not found`,
+          name,
+          trimmed.toLocaleLowerCase()
+        );
+        continue;
+      }
+      const type = PostgresDataTypes[key_name];
       if (type && name) {
         properties.push({
           name: name,
           type: is_array ? `${type}[]` : type,
         });
       } else {
-        console.log(
-          `Type ${serialized} not found`,
-          name
-        );
+        console.log(`Type ${serialized} not found`, name, matched);
       }
     }
 

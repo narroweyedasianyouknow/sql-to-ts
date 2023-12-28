@@ -1,6 +1,16 @@
 import * as assert from "assert";
 import { Parser } from "../src/toTypescript";
-
+`
+CREATE TABLE example_table (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(255),
+  age INT,
+  salary DECIMAL(10, 2),
+  is_active BOOLEAN,
+  birthdate DATE,
+  registration_time TIMESTAMP
+);
+`
 it("should parse simple create table", function () {
   const input = `CREATE TABLE users (
     id  UUID, 
